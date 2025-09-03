@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammed Afsal | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Cursor Trail -->
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Floating Shapes -->
+  <div class="floating-shapes">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-profile">
+      <div class="profile-circle">
+        <img src="images/profile.jpg" alt="Profile" class="profile-pic">
+      </div>
+      <h2>Muhammed Afsal</h2>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+      <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
+      <a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a>
+      <a href="#projects" class="nav-link"><i class="fas fa-folder"></i> Projects</a>
+      <a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a>
+      <a href="#internship" class="nav-link"><i class="fas fa-briefcase"></i> Internship</a>
+      <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+
+    <div class="sidebar-socials">
+      <a href="https://github.com/afsal2305" target="_blank" class="social-link" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/muhammed-afsal-a118b8368" target="_blank" class="social-link" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:afsalofficial2024@gmail.com" class="social-link" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="resume/Muhammed_Afsal_Resume.pdf" download class="social-link" title="Download Resume">
+        <i class="fas fa-download"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sidebar Toggle Button -->
+  <button class="toggle-btn" onclick="toggleSidebar()">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="greeting">Hello, I'm</p>
+          <h1>Muhammed <span class="highlight">Afsal</span></h1>
+          <p class="subtitle">Aspiring Full Stack Developer | Django Enthusiast</p>
+          <div class="hero-buttons">
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/muhammed-afsal-a118b8368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="btn btn-primary">
+    <i class="fab fa-linkedin"></i>
+    Get In Touch
+  </a>
+
+  <!-- GitHub -->
+  <a href="https://github.com/afsal2305" target="_blank" class="btn btn-secondary">
+    <i class="fab fa-github"></i>
+    View My Projects
+  </a>
+
+  <!-- Resume -->
+  <a href="resume/Muhammed_Afsal_Resume.pdf" download class="btn btn-secondary">
+    <i class="fas fa-download"></i>
+    Download Resume
+  </a>
+</div>
+
+        </div>
+        <div class="hero-image">
+          <div class="image-container">
+            <img src="images/main.jpg" alt="Muhammed Afsal">
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+    <section id="about" class="about">
+  <div class="about-container">
+   <section id="about" class="about">
+  <div class="about-container">
+    <!-- About Text -->
+    <div class="about-content">
+      <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      <p class="about-text">
+        I’m <span class="highlight">Muhammed Afsal</span>, a passionate Full Stack Developer who loves building 
+        modern, scalable, and interactive web applications. With strong skills in 
+        <b>Python, JavaScript, Django, and MERN Stack</b>, I enjoy solving problems 
+        and creating clean, efficient solutions.
+      </p>
+      <p class="about-text">
+        I’ve worked on projects like an <b>Online Shoe Shop</b> and 
+        <b>AutoTradex</b> (a used vehicle marketplace with chat system).  
+        My goal is to grow as a developer, contribute to real-world projects, 
+        and constantly improve my skills in software development.
+      </p>
+      <a href="#projects" class="btn btn-primary">
+        <i class="fas fa-code"></i> View Projects
+      </a>
+    </div>
+  </div>
+</section>
+<section id="skills" class="skills">
+  <div class="skills-container">
+    <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+
+    <div class="skills-grid">
+
+      <!-- Programming Languages -->
+      <div class="skill-card">
+        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+        <div class="skill-items">
+          <span class="skill-badge">C</span>
+          <span class="skill-badge">Java</span>
+          <span class="skill-badge">Python</span>
+          <span class="skill-badge">PHP</span>
+          <span class="skill-badge">JavaScript</span>
+        </div>
+      </div>
+
+      <!-- Frameworks -->
+      <div class="skill-card">
+        <h3><i class="fas fa-layer-group"></i> Frameworks & Stacks</h3>
+        <div class="skill-items">
+          <span class="skill-badge">Django</span>
+          <span class="skill-badge">MERN Stack</span>
+        </div>
+      </div>
+
+      <!-- Worked With -->
+      <div class="skill-card">
+        <h3><i class="fas fa-tools"></i> Worked With</h3>
+        <div class="skill-items">
+          <span class="skill-badge">HTML</span>
+          <span class="skill-badge">CSS</span>
+          <span class="skill-badge">Java-Script</span>
+          <span class="skill-badge">React</span>
+          <span class="skill-badge">Express</span>
+          <span class="skill-badge">Node.js</span>
+          <span class="skill-badge">Python</span>
+          <span class="skill-badge">C</span>          
+          <span class="skill-badge">Java</span>
+          <span class="skill-badge">PHP</span>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="skill-card">
+        <h3><i class="fas fa-database"></i> Databases</h3>
+        <div class="skill-items">
+          <span class="skill-badge">MySQL</span>
+          <span class="skill-badge">MongoDB</span>
+          <span class="skill-badge">PostgreSQL</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <div class="projects-container">
+    <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+
+    <div class="projects-grid">
+
+      <!-- Dress Kart -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Dress Kart</h3>
+          <p>
+            An e-commerce website designed for users to explore and purchase a wide range of stylish dresses.
+            Built using <b>Django</b> with features like product browsing, cart, and purchase.
+          </p>
+          <div class="project-buttons">
+            <a href="https://github.com/afsal2305" target="_blank" class="btn btn-primary">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job Finder -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Job Finder</h3>
+          <p>
+            A job searching web application developed using <b>Django</b>. Helps users browse and apply for jobs 
+            with efficient data management.
+          </p>
+          <div class="project-buttons">
+            <a href="https://github.com/afsal2305" target="_blank" class="btn btn-primary">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shoe Shop -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>Shoe Shop</h3>
+          <p>
+            An online shoe shopping website with authentication, product listing, cart, wishlist, 
+            and an admin panel. Built with <b>Django</b> for a smooth shopping experience.
+          </p>
+          <div class="project-buttons">
+            <a href="https://github.com/afsal2305" target="_blank" class="btn btn-primary">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- AutoTradex -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>AutoTradex</h3>
+          <p>
+            A used vehicle marketplace similar to OLX, where users can buy/sell vehicles. Includes 
+            chat system for buyer–seller communication, user profiles, and authentication.
+          </p>
+          <div class="project-buttons">
+            <a href="https://github.com/afsal2305" target="_blank" class="btn btn-primary">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="education" class="education">
+  <div class="education-container">
+    <h2 class="section-title">My <span class="highlight">Education</span></h2>
+
+    <div class="timeline">
+
+      <!-- Diploma -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>Diploma in Computer Engineering</h3>
+          <span class="timeline-date">2022 – 2025</span>
+          <p>Model Polytechnic College, Karunagappally</p>
+        </div>
+      </div>
+
+      <!-- Higher Secondary -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-school"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>Higher Secondary</h3>
+          <span class="timeline-date">2020 – 2022</span>
+          <p>KKM GVHSS, Elippakulam</p>
+        </div>
+      </div>
+
+      <!-- SSLC -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-book"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>SSLC</h3>
+          <span class="timeline-date">2019 – 2020</span>
+          <p>GGHSS, Thazhava</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="internship" class="internship">
+  <div class="internship-container">
+    <h2 class="section-title">My <span class="highlight">Internship</span></h2>
+
+    <div class="internship-card">
+      <div class="internship-icon">
+        <i class="fas fa-briefcase"></i>
+      </div>
+      <div class="internship-content">
+        <h3>Django Full-Stack Intern</h3>
+        <span class="internship-date">2024</span>
+        <p>
+          Completed internship at <b>Grapesgenix</b>, where I worked on the 
+          design and implementation of modern web applications using 
+          <b>Django</b>. Gained hands-on experience in backend development, 
+          database integration, and responsive web design.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+      <!-- contact section -->
+
+
+<section id="contact" class="contact">
+  <div class="contact-container">
+    <h2 class="section-title">Get in <span class="highlight">Touch</span></h2>
+
+    <div class="contact-grid">
+      <!-- Email -->
+      <div class="contact-card">
+        <div class="contact-icon">
+          <i class="fab fa-google"></i>
+        </div>
+        <p class="contact-text">
+          <a href="mailto:afsaloffcial2024@gmail.com">afsaloffcial2024@gmail.com</a>
+        </p>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="contact-card">
+        <div class="contact-icon">
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p class="contact-text">
+          <a href="https://www.linkedin.com/in/muhammed-afsal-a118b8368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn Profile</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- About Me -->
+    <div class="footer-col">
+      <h3>About Me</h3>
+      <p>
+        I'm <span class="highlight">Muhammed Afsal</span>, a passionate full stack developer who loves building 
+        creative, scalable, and interactive web applications.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Links -->
+    <div class="footer-col">
+      <h3>Connect</h3>
+      <div class="footer-socials">
+        <a href="mailto:afsaloffcial2024@gmail.com" class="social-link"><i class="fab fa-google"></i></a>
+        <a href="https://www.linkedin.com/in/muhammed-afsal-a118b8368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/afsal2305" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>© 2025 Muhammed Afsal. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
