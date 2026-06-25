@@ -637,85 +637,6 @@ svg, video, iframe, canvas { max-width: 100%; height: auto; }
   border: 2px solid rgba(255, 255, 255, 0.08);
 }
 
-/* ==================== HERO VISUAL (legacy) ==================== */
-  position: relative;
-  width: 380px;
-  height: 380px;
-}
-
-.hero-glow {
-  position: absolute;
-  inset: -24px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(79, 70, 229, 0.2), transparent 70%);
-  animation: glowPulse 4s ease-in-out infinite;
-}
-
-@keyframes glowPulse {
-  0%, 100% { opacity: 0.5; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.06); }
-}
-
-.hero-frame {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.06);
-  overflow: hidden;
-  animation: floatY 6s ease-in-out infinite;
-}
-
-@keyframes floatY {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-}
-
-.hero-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.float-icons {
-  position: absolute;
-  inset: -20px;
-  pointer-events: none;
-}
-
-.float-icon {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 14px;
-  background: rgba(5, 5, 5, 0.9);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--border);
-  border-radius: 100px;
-  font-size: 0.82rem;
-  font-weight: 500;
-  color: var(--text-secondary);
-  animation: floatIcon 5s ease-in-out infinite;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-}
-
-.float-icon i {
-  font-size: 1rem;
-}
-
-.fi-1 { top: 5%; right: -8%; color: #61DAFB; animation-delay: 0s; }
-.fi-2 { bottom: 12%; left: -10%; color: #68A063; animation-delay: -1.25s; }
-.fi-3 { top: 30%; right: -12%; animation-delay: -2.5s; }
-.fi-4 { bottom: 35%; left: -5%; color: #3776AB; animation-delay: -3.75s; }
-
-.fi-3 i { color: #F29111; }
-
-@keyframes floatIcon {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
-
 /* ==================== SCROLL DOWN ==================== */
 .scroll-down {
   position: absolute;
@@ -1478,6 +1399,17 @@ section {
   border-top: 1px solid var(--border);
   color: var(--text-muted);
   font-size: 0.82rem;
+}
+
+/* ==================== HERO CONTAINER ==================== */
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  width: 100%;
 }
 
 /* ==================== RESPONSIVE ==================== */
