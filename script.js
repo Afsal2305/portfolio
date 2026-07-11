@@ -150,4 +150,75 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ===================== EDUCATION NAV LINK =====================
+  document.querySelectorAll('a[href="#education"]').forEach(link => {
+    link.addEventListener('click', () => {
+      setTimeout(() => {
+        const eduTab = document.querySelector('.exp-tab[data-tab="education"]');
+        if (eduTab && !eduTab.classList.contains('active')) {
+          eduTab.click();
+        }
+      }, 150);
+    });
+  });
+
+  // ===================== HERO ENTRANCE ANIMATION =====================
+  function startHeroAnimation() {
+    const navbar = document.getElementById('navbar');
+    const heroEls = document.querySelectorAll('[data-delay]');
+    const heroPng = document.getElementById('heroPng');
+    const heroGlow = document.querySelector('.hero-glow');
+
+    if (window.innerWidth <= 768) {
+      // MOBILE SEQUENCE
+
+      // Step 1: Navbar fades in
+      setTimeout(() => navbar.classList.add('visible'), 200);
+
+      // Step 2: Blue glow fades in
+      setTimeout(() => {
+        if (heroGlow) heroGlow.classList.add('visible');
+      }, 400);
+
+      // Step 3: Image appears (1200ms animation: translateY(80px) scale(0.92) -> translateY(0) scale(1))
+      setTimeout(() => {
+        if (heroPng) heroPng.classList.add('visible');
+      }, 800);
+
+      // Step 4: Text elements fade in (greeting, name, subtitle, description)
+      heroEls.forEach(el => {
+        if (el.closest('.hero-actions')) return;
+        const delay = parseInt(el.dataset.delay);
+        setTimeout(() => el.classList.add('visible'), delay + 600);
+      });
+
+      // Step 5: Buttons fade in
+      const btns = document.querySelectorAll('.hero-actions .btn');
+      btns.forEach((btn, i) => {
+        setTimeout(() => btn.classList.add('visible'), 2200 + i * 100);
+      });
+
+      return;
+    }
+
+    // DESKTOP SEQUENCE (unchanged)
+    setTimeout(() => navbar.classList.add('visible'), 200);
+
+    heroEls.forEach(el => {
+      const delay = parseInt(el.dataset.delay);
+      setTimeout(() => el.classList.add('visible'), delay);
+    });
+
+    setTimeout(() => {
+      if (heroPng) heroPng.classList.add('visible');
+      if (heroGlow) heroGlow.classList.add('visible');
+    }, 1400);
+  }
+
+  if (document.getElementById('loader').classList.contains('hidden')) {
+    startHeroAnimation();
+  } else {
+    document.getElementById('loader').addEventListener('transitionend', startHeroAnimation, { once: true });
+  }
+
 });

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Muhammed Afsal | Full Stack Developer</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
   <!-- Loading Screen -->
@@ -35,6 +38,7 @@
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <div class="nav-right">
@@ -60,15 +64,18 @@
       <li><a href="#skills" class="mobile-link">Skills</a></li>
       <li><a href="#projects" class="mobile-link">Projects</a></li>
       <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#education" class="mobile-link">Education</a></li>
       <li><a href="#contact" class="mobile-link">Contact</a></li>
     </ul>
     <div class="mobile-bottom">
       <div class="mobile-socials">
         <a href="https://github.com/afsal2305" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/muhammed-afsal-a118b8368" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/in/muhammed-afsal-a118b8368" target="_blank" aria-label="LinkedIn"><i
+            class="fab fa-linkedin-in"></i></a>
         <a href="mailto:afsalofficial2024@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
-      <a href="resume/Muhammed_Afsal_Resume.pdf" download class="mobile-resume-btn"><i class="fas fa-arrow-down"></i> Download Resume</a>
+      <a href="resume/Muhammed_Afsal_Resume.pdf" download class="mobile-resume-btn"><i class="fas fa-arrow-down"></i>
+        Download Resume</a>
     </div>
   </div>
   <div class="mobile-overlay" id="mobileOverlay"></div>
@@ -79,24 +86,32 @@
     <section id="home" class="hero">
       <div class="hero-container">
         <div class="hero-content">
-          <p class="greeting">Hello, I'm</p>
-          <h1>Muhammed <span class="highlight">Afsal</span></h1>
-          <p class="subtitle">Aspiring Full Stack Developer | MERN Stack Enthusiast</p>
-          <div class="hero-buttons">
-            <a href="https://www.linkedin.com/in/muhammed-afsal-a118b8368" target="_blank" class="btn btn-primary">
+          <p class="hero-greeting" data-delay="500">Hello, I'm</p>
+          <h1 class="hero-name" data-delay="700">Muhammed <span class="gradient-text">Afsal</span></h1>
+          <p class="hero-subtitle" data-delay="900">Full Stack Developer</p>
+          <p class="hero-description" data-delay="1000">Building modern digital products with the MERN stack.</p>
+          <div class="hero-actions">
+            <a href="https://www.linkedin.com/in/muhammed-afsal-a118b8368" target="_blank" class="btn btn-primary"
+              data-delay="1100">
               <i class="fab fa-linkedin"></i> Get In Touch
             </a>
-            <a href="https://github.com/afsal2305" target="_blank" class="btn btn-secondary">
+            <a href="https://github.com/afsal2305" target="_blank" class="btn btn-secondary" data-delay="1200">
               <i class="fab fa-github"></i> View My Projects
             </a>
-            <a href="resume/Muhammed_Afsal_Resume.pdf" download class="btn btn-secondary">
+            <a href="resume/Muhammed_Afsal_Resume.pdf" download class="btn btn-secondary" data-delay="1300">
               <i class="fas fa-download"></i> Download Resume
             </a>
           </div>
         </div>
-        <div class="hero-image">
-          <div class="image-container">
-            <img src="images/main.jpg" alt="Muhammed Afsal">
+        <div class="hero-visual">
+          <div class="hero-glow"></div>
+          <div class="hero-png-wrapper">
+            <div class="hero-light-sweep"></div>
+            <div class="hero-edge-light"></div>
+            <img src="images/profile-main.png" alt="Muhammed Afsal" class="hero-png" id="heroPng">
+            <div class="hero-particles"></div>
+            <div class="hero-aura"></div>
+            <div class="hero-shimmer"></div>
           </div>
         </div>
       </div>
@@ -117,7 +132,11 @@
         </div>
         <div class="about-col about-desc-col reveal">
           <p class="about-desc">
-I'm Muhammed Afsal, a Full Stack Developer from Kerala with a 3-year Diploma in Computer Engineering, specializing in the MERN Stack and Python Django. I have built real-world projects including CRM systems, e-commerce platforms, automation solutions, and AI-powered applications. I recently completed my Full Stack Development Internship at UFS Technologies, Infopark Phase 2, Kochi. Currently, I work as a Freelance Full Stack Developer and am open to freelance, internship, and full-time opportunities.
+            I'm Muhammed Afsal, a Full Stack Developer from Kerala with a 3-year Diploma in Computer Engineering,
+            specializing in the MERN Stack and Python Django. I have built real-world projects including CRM systems,
+            e-commerce platforms, automation solutions, and AI-powered applications. I recently completed my Full Stack
+            Development Internship at UFS Technologies, Infopark Phase 2, Kochi. Currently, I work as a Freelance Full
+            Stack Developer and am open to freelance, internship, and full-time opportunities.
           </p>
           <div class="about-grid">
             <div class="about-card">
@@ -220,13 +239,16 @@ I'm Muhammed Afsal, a Full Stack Developer from Kerala with a 3-year Diploma in 
               <div class="project-type">CRM & Automation</div>
             </div>
             <h3 class="project-title">WorkForce Management System</h3>
-            <p class="project-desc">CRM and workflow automation platform for managing customers, employees, assignments, workflow tracking, and revenue monitoring.</p>
+            <p class="project-desc">CRM and workflow automation platform for managing customers, employees, assignments,
+              workflow tracking, and revenue monitoring.</p>
             <div class="project-techs">
               <span>React Vite</span><span>Node.js</span><span>Express</span><span>MySQL</span>
             </div>
             <div class="project-actions">
-              <a href="https://github.com/afsal2305" target="_blank" class="project-btn"><i class="fab fa-github"></i> GitHub</a>
-              <a href="https://workforcemanagementsystem.in/" target="_blank" class="project-btn primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="https://github.com/afsal2305" target="_blank" class="project-btn"><i class="fab fa-github"></i>
+                GitHub</a>
+              <a href="https://workforcemanagementsystem.in/" target="_blank" class="project-btn primary"><i
+                  class="fas fa-external-link-alt"></i> Live Demo</a>
             </div>
           </div>
           <div class="project-card reveal">
@@ -236,13 +258,16 @@ I'm Muhammed Afsal, a Full Stack Developer from Kerala with a 3-year Diploma in 
               <div class="project-type">E-Commerce</div>
             </div>
             <h3 class="project-title">Zayvo.in</h3>
-            <p class="project-desc">Full-stack ecommerce platform for selling 3D printed products with payment integration, user dashboard, and admin panel.</p>
+            <p class="project-desc">Full-stack ecommerce platform for selling 3D printed products with payment
+              integration, user dashboard, and admin panel.</p>
             <div class="project-techs">
               <span>React</span><span>Node.js</span><span>MySQL</span>
             </div>
             <div class="project-actions">
-              <a href="https://github.com/afsal2305" target="_blank" class="project-btn"><i class="fab fa-github"></i> GitHub</a>
-              <a href="https://zayvo.in/" target="_blank" class="project-btn primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="https://github.com/afsal2305" target="_blank" class="project-btn"><i class="fab fa-github"></i>
+                GitHub</a>
+              <a href="https://zayvo.in/" target="_blank" class="project-btn primary"><i
+                  class="fas fa-external-link-alt"></i> Live Demo</a>
             </div>
           </div>
           <div class="project-card reveal">
@@ -252,13 +277,16 @@ I'm Muhammed Afsal, a Full Stack Developer from Kerala with a 3-year Diploma in 
               <div class="project-type">Automation</div>
             </div>
             <h3 class="project-title">WhatsApp Automation System</h3>
-            <p class="project-desc">Bulk and personalized messaging platform built with Baileys, Angular, Node.js, Express, MySQL, and Socket.IO for real-time communication.</p>
+            <p class="project-desc">Bulk and personalized messaging platform built with Baileys, Angular, Node.js,
+              Express, MySQL, and Socket.IO for real-time communication.</p>
             <div class="project-techs">
               <span>Angular</span><span>Node.js</span><span>Express</span><span>MySQL</span><span>Socket.IO</span>
             </div>
             <div class="project-actions">
-              <a href="https://github.com/afsal2305" target="_blank" class="project-btn"><i class="fab fa-github"></i> GitHub</a>
-              <a href="https://github.com/afsal2305" target="_blank" class="project-btn primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="https://github.com/afsal2305" target="_blank" class="project-btn"><i class="fab fa-github"></i>
+                GitHub</a>
+              <a href="https://github.com/afsal2305" target="_blank" class="project-btn primary"><i
+                  class="fas fa-external-link-alt"></i> Live Demo</a>
             </div>
           </div>
           <div class="project-card reveal">
@@ -268,13 +296,16 @@ I'm Muhammed Afsal, a Full Stack Developer from Kerala with a 3-year Diploma in 
               <div class="project-type">AI Application</div>
             </div>
             <h3 class="project-title">AI Legal Assistant Chatbot</h3>
-            <p class="project-desc">AI-powered legal assistant built with Django, Gemini API, LangChain, and Python. Provides intelligent legal information and guidance through natural conversation.</p>
+            <p class="project-desc">AI-powered legal assistant built with Django, Gemini API, LangChain, and Python.
+              Provides intelligent legal information and guidance through natural conversation.</p>
             <div class="project-techs">
               <span>Django</span><span>Python</span><span>Gemini API</span><span>LangChain</span>
             </div>
             <div class="project-actions">
-              <a href="https://github.com/afsal2305" target="_blank" class="project-btn"><i class="fab fa-github"></i> GitHub</a>
-              <a href="https://github.com/afsal2305" target="_blank" class="project-btn primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="https://github.com/afsal2305" target="_blank" class="project-btn"><i class="fab fa-github"></i>
+                GitHub</a>
+              <a href="https://github.com/afsal2305" target="_blank" class="project-btn primary"><i
+                  class="fas fa-external-link-alt"></i> Live Demo</a>
             </div>
           </div>
         </div>
@@ -290,7 +321,7 @@ I'm Muhammed Afsal, a Full Stack Developer from Kerala with a 3-year Diploma in 
         </div>
         <div class="exp-tabs reveal">
           <button class="exp-tab active" data-tab="career">Career</button>
-          <button class="exp-tab" data-tab="education">Education</button>
+          <button class="exp-tab" data-tab="education" id="education">Education</button>
         </div>
         <div class="exp-panel active" id="panelCareer">
           <div class="timeline">
@@ -301,7 +332,8 @@ I'm Muhammed Afsal, a Full Stack Developer from Kerala with a 3-year Diploma in 
                 <div class="tl-badge">Current</div>
                 <h3 class="tl-title">Full Stack Developer Intern</h3>
                 <p class="tl-sub">UFS Technologies &middot; TransAsia &middot; Infopark Phase 2 &middot; Kochi</p>
-                <p class="tl-desc">Building and maintaining modern web applications using React Vite, Node.js, Express, and MySQL. Working on real-world CRM systems, automation platforms, and enterprise-grade products.</p>
+                <p class="tl-desc">Building and maintaining modern web applications using React Vite, Node.js, Express,
+                  and MySQL. Working on real-world CRM systems, automation platforms, and enterprise-grade products.</p>
                 <div class="tl-tags">
                   <span>React</span><span>Node.js</span><span>Express</span><span>MySQL</span>
                 </div>
@@ -313,7 +345,8 @@ I'm Muhammed Afsal, a Full Stack Developer from Kerala with a 3-year Diploma in 
                 <span class="tl-date">2024</span>
                 <h3 class="tl-title">Python Django Intern</h3>
                 <p class="tl-sub">Grapesgenix</p>
-                <p class="tl-desc">Designed and implemented modern web applications using Django. Gained hands-on experience in backend development, database integration, and responsive web design.</p>
+                <p class="tl-desc">Designed and implemented modern web applications using Django. Gained hands-on
+                  experience in backend development, database integration, and responsive web design.</p>
                 <div class="tl-tags">
                   <span>Django</span><span>Python</span><span>SQL</span><span>HTML/CSS</span>
                 </div>
@@ -330,7 +363,8 @@ I'm Muhammed Afsal, a Full Stack Developer from Kerala with a 3-year Diploma in 
                 <span class="tl-date">2022 &ndash; 2025</span>
                 <h3 class="tl-title">Diploma in Computer Engineering</h3>
                 <p class="tl-sub">Model Polytechnic College, Karunagappally</p>
-                <p class="tl-desc">Completed diploma with focus on software development, data structures, and web technologies.</p>
+                <p class="tl-desc">Completed diploma with focus on software development, data structures, and web
+                  technologies.</p>
               </div>
             </div>
             <div class="tl-item">
@@ -339,7 +373,8 @@ I'm Muhammed Afsal, a Full Stack Developer from Kerala with a 3-year Diploma in 
                 <span class="tl-date">2020 &ndash; 2022</span>
                 <h3 class="tl-title">Higher Secondary</h3>
                 <p class="tl-sub">KKM GVHSS, Elippakulam</p>
-                <p class="tl-desc">Completed higher secondary education with a focus on computer science and mathematics.</p>
+                <p class="tl-desc">Completed higher secondary education with a focus on computer science and
+                  mathematics.</p>
               </div>
             </div>
             <div class="tl-item">
@@ -398,7 +433,8 @@ I'm Muhammed Afsal, a Full Stack Developer from Kerala with a 3-year Diploma in 
         <p>Full Stack Developer building digital products that make a difference.</p>
         <div class="footer-socials">
           <a href="https://github.com/afsal2305" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/muhammed-afsal-a118b8368" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.linkedin.com/in/muhammed-afsal-a118b8368" target="_blank" aria-label="LinkedIn"><i
+              class="fab fa-linkedin-in"></i></a>
           <a href="mailto:afsalofficial2024@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
@@ -426,4 +462,5 @@ I'm Muhammed Afsal, a Full Stack Developer from Kerala with a 3-year Diploma in 
 
   <script src="script.js"></script>
 </body>
+
 </html>
