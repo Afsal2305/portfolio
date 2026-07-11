@@ -1574,6 +1574,8 @@ svg, video, iframe, canvas { max-width: 100%; height: auto; }
   .hero-png.visible {
     opacity: 1;
     transform: translateY(0) scale(1);
+    filter: none;
+    box-shadow: none;
     animation: none;
   }
 
